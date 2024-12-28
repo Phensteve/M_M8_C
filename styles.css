@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: auto;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family:'Courier New', Courier, monospace;
+}
+body{ 
+    overflow: hidden;
+}
+.m_btn{
+    padding: .5rem .75rem;
+    margin: 1vw;
+    border: transparent solid;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    /* vertical-align: middle; */
+    transition: 2s;
+    text-decoration: none  !important;
+    font-weight: 700;
+}
+.m_btn:disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.m_btn:hover{
+    transition: ease-in 0.5s;
+    outline: .3rem solid #2b2b2b;
+    /* outline: 20vw; */
+    opacity: 0.8;
+}
+.m_bg-red{
+    background-color: #ff3333;
+    color: #ffffff;
+}
+.m_bg-green{
+    background-color: #47ff5d;
+    color: #e8e8e8;
+}
+.m_bg-blue{
+    background-color: #1c72fd;
+    color: #e8e8e8;
+}
+.m_bg-yellow{
+    background-color:  #fcff57;
+    color: #363636;
+}
+.m_bg-dark{
+    background-color: #2b2b2b;
+    color: #e8e8e8;
+}
+.m_bg-light{
+    background-color: #e8e8e8;
+}
+.m_text-red{
+    color: #ff5c5c !important;
+}
+.m_text-blue{
+    color: #2b7bfd !important;
+}
+.m_text-green{
+    color: #47ff5d !important;
+}
+.m_text-yellow{
+    color: #fcff57 !important;
+}
+.m_text-dark{
+    color: #2b2b2b !important;
+}
+.m_card{
+    border: transparent solid 0.05rem;
+    border-radius: 0.25rem;
+    padding: 1vw;
+}
+.m_center{
+    text-align: center !important;
+    justify-content: center !important;
+    justify-self: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    align-self: center !important;
+}
+.container{
+    width: 50vw;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    z-index: 10;
+    transition: 2s;
+    /* background-color: #363636; */
+}
+.container:hover{
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+input{
+    padding: 1vw;
+    margin: 1rem .3rem;
+    width: 80%;
+    border:#1c72fd;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+    box-shadow: 0 0 0 5 #2b2b2b;
+    outline: .3rem solid #ffffff;
+}
+.m_input_group{
+    text-align: start;
+    justify-self: center;
+    /* background-color: #2b2b2b; */
+    margin: .5rem;
+    padding: .5rem;
+    width: 100%;
+}
+.text-start{
+    text-align: start;
+}
+.m_text-small{
+    font-size: x-small;
+}
+input:hover{
+    transition: ease-in 0.5s;
+    outline: .75rem solid #ffffff;
+    opacity: 0.9;
+}
+.mask{
+    width: 3.5vw;
+    z-index: -1;
+    opacity: .5;
+}
+.mask_con{
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    text-align: center;
+    justify-content: center !important;
+    animation: mask 30s infinite;
+    /* animation-delay: 1s; */
+    top: -170vh;
+    height: 90vh;
+    /* overflow-y: hidden !important; */
+}
+.mask_con{
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    text-align: center;
+    justify-content: center !important;
+    animation: mask 30s infinite;
+    /* animation-delay: 1s; */
+    top: -170vh;
+    height: 90vh;
+    /* overflow-y: hidden !important; */
+}
+.remark{
+    transition: 1s;
+}
+.remark:hover{
+    transform: scale(.9);
+    opacity: .5;
+}
+.group{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+code{
+    font-size: small;
+    float: end;
+    animation: coded 70s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.show_password{
+    text-align: end !important;
+    display: inline;
+}
+.password{
+    float: right;
+    color: #2b2b2b;
+    text-align: end !important;
+    cursor: pointer;
+    transition: .5s;
+}
+.password:hover{
+    transform: scale(.9);
+    opacity: .5;
+}
+#body{
+    transition: 1s;
+}
+@keyframes mask {
+    from{
+        top: -100vh;
+        /* left: -100vw; */
+        opacity: .2;
+    }
+    to{
+        /* margin-top: 105vh; */
+        top: 100vh;
+        /* left: 100vw; */
+        opacity: .7;
+    }
+}
+@keyframes mask2 {
+    from{
+        top: -150vh;
+        /* left: -100vw; */
+        opacity: .2;
+    }
+    to{
+        /* margin-top: 105vh; */
+        top: 50vh;
+        /* left: 100vw; */
+        opacity: .7;
+    }
+}
+@keyframes coded {
+    from{
+        right: -5vw;
+    }
+    to{
+        left: 0;
+    }
+}
+#music{
+    
+}
